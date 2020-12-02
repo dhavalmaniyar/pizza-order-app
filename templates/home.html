@@ -18,8 +18,8 @@
 
     .card {
         margin: auto;
-        margin-top: 30vh;
-        margin-bottom: 30vh;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
     }
 
     .coladj {
@@ -57,23 +57,6 @@
     });
     return values;
 }
-
-    function calcTotal() {
-    var total = 0
-        //  Check for pizza-shape
-        // if regular -> total += regular prize
-        // if square -> total += square prize
-
-        // loop for all pizza toppings html entity
-        // if topping == checked -> total += topping.price
-
-        // check size option
-        // get size.price -> total += size.price
-    }
-
-
-
-
 </script>
 
 <body>
@@ -121,48 +104,14 @@
                                 <label class="form-check-label" for="inlineCheckbox{{top.id}}">{{top.topType}}</label>
                             </div>
                             {% endfor %}
-                            <input type="button" onclick="alert(getCheckedCheckboxesFor('topping'));"
-                                   value="Get Values"/>
-                            <!--                            <div class="form-check form-check-inline col">-->
-                            <!--                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2"-->
-                            <!--                                       value="option2">-->
-                            <!--                                <label class="form-check-label" for="inlineCheckbox2">{{top.top_type}}</label>-->
-                            <!--                            </div>-->
-                            <!--                            <div class="form-check form-check-inline col">-->
-                            <!--                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3"-->
-                            <!--                                       value="option3">-->
-                            <!--                                <label class="form-check-label" for="inlineCheckbox3">{{top.top_type}}</label>-->
-                            <!--                            </div>-->
+                            <!-- <input type="button" onclick="alert(getCheckedCheckboxesFor('topping'));"
+                                   value="Get Values"/> -->
                         </div>
                     </div>
                 </div>
 
-                <!--                <div class="form-row">-->
-                <!--                    <div class="col coladj">-->
-                <!--                        <div class="row justify-content-center">-->
-                <!--                            <div class="form-check form-check-inline col">-->
-                <!--                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4"-->
-                <!--                                       value="option4">-->
-                <!--                                <label class="form-check-label" for="inlineCheckbox4">Capsicum</label>-->
-                <!--                            </div>-->
-                <!--                            <div class="form-check form-check-inline col ">-->
-                <!--                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5"-->
-                <!--                                       value="option5">-->
-                <!--                                <label class="form-check-label" for="inlineCheckbox5">Cheese</label>-->
-                <!--                            </div>-->
-                <!--                            <div class="form-check form-check-inline col">-->
-                <!--                                <input class="form-check-input" type="checkbox" id="inlineCheckbox6"-->
-                <!--                                       value="option6">-->
-                <!--                                <label class="form-check-label" for="inlineCheckbox6">Jalapeno</label>-->
-                <!--                            </div>-->
-                <!--                        </div>-->
-                <!--                    </div>-->
-                <!--                </div>-->
                 <div class="form-row justify-content-center ">
                     <div class="form-check form-check-inline    ">
-                        <!--                        <input class="form-check-input" type="checkbox" id="inlineCheckbox7"-->
-                        <!--                               value="option7">-->
-                        <!--                        <label class="form-check-label" for="inlineCheckbox7">Custom</label> &nbsp;&nbsp;&nbsp;-->
                         <input class="form-check-input" type="text" id="inlineCheckbox8" value="">
                     </div>
                 </div>
@@ -190,10 +139,10 @@
                 <hr>
                 <ul>
                     <li>
-                        <button type="button" class="btn btn-success">My Bill</button>
+                        <button type="button" class="btn btn-success" onclick="alert(getCheckedCheckboxesFor('topping'))">My Bill</button>
                     </li>&nbsp;
                     <li><strong>Total ($):</strong></li>
-                    <li><strong>fds</strong></li>
+                    <li><strong>1000    </strong></li>
                 </ul>
 
 
