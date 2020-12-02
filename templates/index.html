@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/bootstrap.css' %}">
+    <title>Pizza-HUT</title>
+</head>
+<style>
+    body{
+        background-image:url(../static/pizza.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card{
+      margin: auto;
+      margin-top:30vh;
+      margin-bottom:30vh;
+    }
+
+
+
+</style>
+<body>
+<div class="container justigy-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary nav justify-content-center ">
+        <h1 style="color:aliceblue;">Pizza-Hut: Eat, Code &amp Repeat &#128522;</h1>
+    </nav>
+    <div class="card text-center " style="width: 18rem;">
+        <div class="card-body bg-warning ">
+            <h5 class="card-title ">Order Now</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
